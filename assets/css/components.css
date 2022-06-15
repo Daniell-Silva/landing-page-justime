@@ -1,0 +1,78 @@
+:root {
+    --color-default: #ff311a;
+    --color-default-hover: #e02a15;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-text: #5a5a5a;
+    --bg-element-darck: #363636;
+    --bg-element-light: #f1f1f1;
+    --bg-section: #f4f3ef;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 3.4rem;
+    font-family: 'DM Serif Display', serif;
+    color: var(--color-black);
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    color: var(--color-black);
+    font-family: 'DM Serif Display', serif;
+}
+
+h3 {
+    font-size: 1.9rem;
+    line-height: 1.8rem;
+    font-family: 'DM Serif Display', serif;
+    color: var(--color-black);
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: var(--color-default);
+}
+
+p {
+   font-size: 1.1rem; 
+   font-weight: 500;
+   line-height: 1.6rem;
+   color: var(--color-text);
+}
+
+/*========== COMPONENTES TITULOS CATEGORIAS =================*/
+
+.bar-title-categories {
+    width: 50px;
+    height: 3px;
+    float: left;
+    margin-top: 13px;
+    margin-right: 15px;
+    background-color: var(--color-default);
+}
+
+.title-section {
+    margin-bottom: 16px;
+}
+
+
+
+
+
+.button-default {
+    display: inline-block;
+    color: var(--color-white);
+    font-size: 0.8rem;
+    padding: 15px 25px;
+    transition: 0.1s;
+    text-transform: uppercase;
+    background-color: var(--color-default);
+}
+
+.button-default:hover {
+    background-color: var(--color-default-hover);
+}
+

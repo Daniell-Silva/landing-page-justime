@@ -1,0 +1,32 @@
+#aboutUs {
+    display: flex;
+    justify-content: center;
+}
+
+#aboutUs .about-content {
+    flex: 1;
+    display: flex;
+    margin-top: 100px;
+    padding: 40px;
+    background-color: var(--bg-section);
+}
+
+#aboutUs .about-content .abaut-text {
+    flex: 1;
+}
+
+#aboutUs .about-content .about-image {
+    flex: 1;
+}
+
+#aboutUs .abaut-text .title-section {
+    text-transform: uppercase;
+    color: var(--color-default);
+    font-weight: 600;
+}
+
+#aboutUs .about-content p:nth-child(4n) {
+    margin-top: 15px;
+    margin-bottom: 22px;
+    color: var(--color-default);
+}

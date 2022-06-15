@@ -1,0 +1,138 @@
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*===========CONTATOS HEADER=============*/
+
+.info-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header .info-heder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .info-heder .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.border-pont {
+    border-right: 1px dotted rgb(211, 211, 211);
+}
+
+/*.info-heder:nth-child(3n) {
+    border-right: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+}*/
+
+header .info-contact {
+    display: flex;
+}
+
+header .contact-info b {
+    margin-top: -3px;
+}
+
+header .desc-contact-header {
+    font-size: 12px;
+    color: var(--color-text);
+}
+
+header .info-contact .info-heder .fa {
+    font-size: 32px;
+    margin-right: 10px;
+    color: var(--color-default);
+}
+
+header .info-contact .midias  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .info-contact .midias .fa {
+    width: 30px;
+    height: 30px;
+    padding: 8px 0;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.1s;
+}
+
+header .info-contact .midias .fa:hover {
+    color: var(--color-white);
+    background-color: var(--color-default);
+}
+
+
+header hr {
+    border-color: rgba(255, 255, 255, 0.342);
+    width: 100%;
+}
+
+/*===========MENU DE HEADER=============*/
+
+
+#menuNav {
+    flex: 1;
+    margin-top: -2px;
+}
+
+#menuNav nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menuNav ul {
+    display: flex;
+}
+
+#menuNav li a {
+    height: 70px;
+    font-weight: 500;
+    color: var( --color-black);
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    border-top: 3px solid transparent;
+    transition: 0.1s;
+}
+
+#menuNav li a:hover,
+#menuNav .active a {
+    border-top: 3px solid var(--color-default);
+}
+
+#menuNav .button-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--color-default);
+    transition: 0.1s;
+}
+
+#menuNav .button-header:hover {
+    background-color: var(--color-default-hover);
+}
+
+
