@@ -11,9 +11,53 @@
     <link rel="stylesheet" type="text/css" href="assets/css/banner.css">
     <link rel="stylesheet" type="text/css" href="assets/css/features.css">
     <link rel="stylesheet" type="text/css" href="assets/css/aboutus.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/projects.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          position: relative;
+          overflow: hidden;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .swiper-pagination {
+            margin-bottom: -50px;
+        }
+      </style>
+
 </head>
 <body>
     <header>
@@ -81,7 +125,6 @@
             <div class="content-headline">
                 <div class="texto-headline">
                     <!--========== COMPONENTES TITULOS CATEGORIAS =================-->
-                    <div class="bar-title-categories"></div>
                     <p class="title-section">Consulting, Coaching, Training</p>
                     <!--========== COMPONENTES TITULOS CATEGORIAS =================-->
                     <h1>We have to do business for your satisfiction</h1>
@@ -99,8 +142,9 @@
         <div class="container column">
             <div class="features-text">
                 <div class="fts-title">
-                    <div class="bar-title-categories"></div>
+                    <!--========== COMPONENTES TITULOS CATEGORIAS =================-->
                     <p class="title-section">Features</p>
+                    <!--========== COMPONENTES TITULOS CATEGORIAS =================-->
                     <h2>We are thr best agency to improve your deals.</h2>
                 </div>
                 <div class="fts-text">
@@ -175,7 +219,6 @@
             <div class="about-content">
                 <div class="abaut-text">
                     <!--========== COMPONENTES TITULOS CATEGORIAS =================-->
-                    <div class="bar-title-categories"></div>
                     <p class="title-section">About Us</p>
                     <!--========== COMPONENTES TITULOS CATEGORIAS =================-->
                     <h2>Why will you chosse our?</h2>
@@ -203,12 +246,100 @@
             </div>
         </div>
     </section>
+<!--===================================PROJETOS===============================================-->
+    <section id="projects">
+        <div class="container column">
+            <div class="proj-title">
+                <p class="title-section">Completed Projects</p>
+                <h2>You can check our projects as inspirations.</h2>
+            </div>
+            <div class="proj-slides">
+                <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="button-default">Get in touch &ensp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <img src="assets/image/about-work.jpg">
+                        <div class="title-img-slide">
+                            <h3>Investiment Polky</h3>
+                            <span>Investiment Polky</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="button-default">Get in touch &ensp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <img src="assets/image/about-work.jpg">
+                        <div class="title-img-slide">
+                            <h3>Invest Polky</h3>
+                            <span>Investiment Polky</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="button-default">Get in touch &ensp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <img src="assets/image/about-work.jpg">
+                        <div class="title-img-slide">
+                            <h3>Timent Polky</h3>
+                            <span>Investiment Polky</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="button-default">Get in touch &ensp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <img src="assets/image/about-work.jpg">
+                        <div class="title-img-slide">
+                            <h3>Timent Polky</h3>
+                            <span>Investiment Polky</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="button-default">Get in touch &ensp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <img src="assets/image/about-work.jpg">
+                        <div class="title-img-slide">
+                            <h3>Timent Polky</h3>
+                            <span>Investiment Polky</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
 
 
 
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: {
+          delay: 2000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
         <!--<a target="_blank" href="https://icons8.com/icon/54735/placa-mãe">Placa-Mãe</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
     </section>
 

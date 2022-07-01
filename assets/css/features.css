@@ -16,12 +16,6 @@
     flex: 1;
 }
 
-#features .fts-title .title-section {
-    text-transform: uppercase;
-    color: var(--color-default);
-    font-weight: 600;
-}
-
 #features .fts-text p {
     margin-top: 45px;
 }

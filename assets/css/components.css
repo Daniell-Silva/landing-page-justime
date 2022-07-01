@@ -55,12 +55,11 @@ p {
 }
 
 .title-section {
+    text-transform: uppercase;
+    color: var(--color-default);
+    font-weight: 600;
     margin-bottom: 16px;
 }
-
-
-
-
 
 .button-default {
     display: inline-block;
