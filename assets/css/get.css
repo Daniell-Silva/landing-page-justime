@@ -1,0 +1,26 @@
+#getInTouch {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#getInTouch .get-text {
+    display: flex;
+}
+
+#getInTouch .get-text .get-title,
+#getInTouch .get-text .get-text {
+    flex: 1;
+}
+
+#getInTouch .get-text .image-get {
+    width: 100%;
+    height: 300px;
+    margin-top: 2rem;
+    background-color: rgb(148, 148, 148);
+}
+
+
+#getInTouch .get-text .get-text p {
+    margin-top: 2.7rem;
+}
