@@ -1,7 +1,6 @@
 #getInTouch {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
 }
 
 #getInTouch .get-text {
@@ -76,7 +75,6 @@
     text-transform: uppercase;
     background-color: var(--color-default);
 }
-
 
 .get-content--main {
     margin-top: 5rem;
