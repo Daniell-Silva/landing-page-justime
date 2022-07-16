@@ -14,13 +14,148 @@
 }
 
 #getInTouch .get-text .image-get {
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    height: 350px;
     margin-top: 2rem;
     background-color: rgb(148, 148, 148);
 }
 
-
 #getInTouch .get-text .get-text p {
     margin-top: 2.7rem;
+}
+
+#getInTouch .get-text .get-text h2 {
+    font-size: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 0.7rem;
+}
+
+#formulario .content-info p {
+    margin: 0 !important;
+    margin: 0;
+}
+
+.content-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#formulario label {
+    font-weight: bold;
+    color: var(--color-text2);
+    font-size: 1rem;
+}
+
+#formulario input {
+    width: 16.5rem;
+    padding: 10px;
+    border: 0;
+    margin-top: 2px;
+    background-color: var(--bg-section);
+}
+
+#formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    margin-top: 5px;
+    background-color: var(--bg-section);
+}
+
+#formulario input[type="submit"] {
+    display: inline-block;
+    color: var(--color-white);
+    width: 100%;
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 12px 25px;
+    border: 0;
+    transition: 0.1s;
+    text-transform: uppercase;
+    background-color: var(--color-default);
+}
+
+
+.get-content--main {
+    margin-top: 5rem;
+}
+
+.content-main--options {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.get-content--main {
+    flex: 100%;
+}
+
+.main-options {
+    flex: 1;
+    padding-left: 1.2rem;
+    border-left: 1px solid var(--bg-section);
+}
+
+.main-options:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.get-content--main .main-options h4 {
+    font-weight: 600;
+    padding: 0.4rem;
+    margin-bottom: 0.2rem;
+    width: 14rem;
+    display: inline-block;
+    background-color: rgb(255, 236, 236);
+}
+
+.main-options li {
+    line-height: 1.5rem;
+    color: var(--color-text);
+}
+
+#getResult {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    background-color: var(--color-default);
+}
+
+#getResult .content-result {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3.9rem 0;
+}
+
+#getResult .result-items {
+    padding: 2rem;
+    width: 310px;
+    margin: 0.8rem 0;
+    background-color: var(--color-white);
+}
+
+#getResult .number-resul {
+    font-size: 2.5rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 600;
+    color: var(--color-default);
+    position: relative;
+}
+
+#getResult .number-resul .fa {
+    font-size: 1rem;
+    position: absolute;
+    top: 18px;
+    left: 125px;
+}
+
+#getResult .result-items h4 {
+    line-height: 2rem;
+    color: var(--color-text2);
 }
