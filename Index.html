@@ -111,9 +111,9 @@
                 <nav>
                     <ul>
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="#aboutUs">About Us</a></li>
                         <li><a href="#">services</a></li>
-                        <li><a href="#">Project</a></li>
+                        <li><a href="#projects">Project</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
@@ -124,6 +124,11 @@
     </header>
     <!--===================================BANNER===============================================-->
     <section id="banner">
+        <div id="modalVideo" class="modal-video">
+            <div class="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YrQLmElRT-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
         <div class="container between">
             <div class="image-headline">
                 <img src="assets/image/image-banner.png" width="100%">
@@ -137,12 +142,15 @@
                     <p>Lorem Ipsum is and typesetting industry. Lorem Ipsum has been the industry's standard dummy Ipsum has been the.</p>
                     <div class="Botton-banner">
                         <a href="#" class="button-default">Get in touch &ensp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                        <button class="play-video" title="Play"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                        <button id="openVideo" class="play-video" title="Play"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
                         <a href="" class="activity" title="See Our Activity">See Our Activity</a>
                     </div>
                 </div>
             </div>
         </div>
+        <!--====================Botão Top====================-->
+        <span class="scrollButton" style="margin-bottom: 70px;"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+        <!--====================Botão Top====================-->
     </section>
     <section id="features">
         <div class="container column">
@@ -470,6 +478,6 @@
         <!--<a target="_blank" href="https://icons8.com/icon/54735/placa-mãe">Placa-Mãe</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
     </section>
 
-<script href="assets/js/script.js"></script>  
+<script src="assets/js/script.js"></script>  
 </body>
 </html>

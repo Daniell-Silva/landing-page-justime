@@ -7,6 +7,10 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     margin-bottom: 800px !important;
 }
@@ -26,4 +30,25 @@ body {
 .column {
     display: flex;
     flex-direction: column;
+}
+
+.scrollButton {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-default);
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    z-index: 999;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.288);
+    transition: All ease 0.3s;
+}
+
+.scrollButton .fa-arrow-up {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 8px;
 }

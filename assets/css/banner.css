@@ -75,3 +75,34 @@
 #banner .activity:hover {
     color: var(--color-default);
 }
+
+.modal-video {
+    display: none;
+    position: fixed; 
+    z-index: 999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.658);
+  } 
+
+.video {
+    width: 1000px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation-name: videoBanner;
+    animation-duration: 0.3s;
+}
+
+@keyframes videoBanner{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
